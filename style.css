@@ -23,6 +23,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+  background: #fff;
 }
 
 .nav-left .menu-icon {
@@ -151,6 +152,11 @@ nav {
   padding-right: 2%;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index: -1;
+}
+
+.large-container {
+  padding-left: 7%;
 }
 
 .container .banner {
@@ -195,4 +201,46 @@ nav {
   font-weight: 600;
   display: block;
   margin-bottom: 5px;
+}
+
+.vid-info p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .container,
+  .large-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .nav-middle input {
+    width: 100px;
+  }
+
+  .nav-left .logo {
+    width: 90px;
+  }
+
+  .nav-right img {
+    display: none;
+  }
+
+  .nav-right .user-icon {
+    display: block;
+    width: 35px;
+  }
+
+  .nav-middle .mic-icon {
+    width: 15px;
+  }
 }
