@@ -22,6 +22,7 @@ nav {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .nav-left .menu-icon {
@@ -59,6 +60,10 @@ nav {
   background: transparent;
 }
 
+.search-box img {
+  width: 15px;
+}
+
 .nav-right img {
   width: 25px;
   margin-right: 25px;
@@ -68,4 +73,72 @@ nav {
   width: 35px;
   border-radius: 50%;
   margin-right: 0;
+}
+
+/* sidebar  */
+.sidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 15%;
+  background-color: #fff;
+  padding-left: 2%;
+  padding-top: 80px;
+}
+
+.sidebar a img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.sidebar .shortcut-links a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.shortcut-links a:first-child {
+  color: #ed3888;
+}
+
+.sidebar hr {
+  background-color: #ccc;
+  width: 85%;
+  border: 0;
+  height: 1px;
+}
+
+.subscribed-list h3 {
+  font-size: 13px;
+  margin: 20px 0;
+  color: #5a5a5a;
+}
+
+.subscribed-list a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.subscribed-list a img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.small-sidebar {
+  width: 5%;
+}
+
+.small-sidebar a p,
+.small-sidebar h3 {
+  display: none;
+}
+
+.small-sidebar hr {
+  width: 50%;
+  margin-bottom: 20px;
 }
